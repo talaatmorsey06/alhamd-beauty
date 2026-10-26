@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>بيوتي سنتر الحمد</title>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf5f6;--surface:#fff;--ink:#2e1635;--muted:#6f5a73;--accent:#8e3a78;--gold:#b88a44;--line:#ead9df;--hero:#2e1635;--herotxt:#fbf5f6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b0f20;--surface:#2a1830;--ink:#f6ecf1;--muted:#c3aec9;--accent:#e08ac6;--gold:#d9b06a;--line:#44294b;--hero:#12091a;--herotxt:#f6ecf1}}
+:root[data-theme="dark"]{--bg:#1b0f20;--surface:#2a1830;--ink:#f6ecf1;--muted:#c3aec9;--accent:#e08ac6;--gold:#d9b06a;--line:#44294b;--hero:#12091a;--herotxt:#f6ecf1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,Tahoma,sans-serif;line-height:1.8}
+h1,h2,h3{font-family:'Reem Kufi',Tahoma,sans-serif;margin:0;line-height:1.3}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{font-family:'Reem Kufi',sans-serif;font-size:22px;font-weight:700;color:var(--accent);text-decoration:none}
+nav{display:flex;gap:18px;font-size:15px}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.btn{display:inline-block;border:0;border-radius:8px;padding:10px 20px;font:700 15px Tajawal,sans-serif;cursor:pointer;background:var(--accent);color:#fff;text-decoration:none}
+.btn.alt{background:transparent;border:1.5px solid var(--gold);color:var(--gold)}
+.btn:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.hero{background:var(--hero);color:var(--herotxt);padding:72px 0 64px}
+.hero h1{font-size:clamp(34px,7vw,60px);max-width:640px}
+.hero p{max-width:520px;color:#d9c6df;font-size:18px;margin:16px 0 28px}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:56px 0}
+h2{font-size:30px;margin-bottom:8px}
+.sub{color:var(--muted);margin:0 0 28px}
+.services{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 18px 16px;border-inline-start:4px solid var(--gold)}
+.svc h3{font-size:19px;color:var(--accent)}
+.svc p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.branches{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.br{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px}
+.br h3{font-size:20px}
+.br p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.book{background:var(--surface);border-block:1px solid var(--line)}
+form{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:680px}
+label{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:500}
+input,select{font:inherit;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.full{grid-column:1/-1}
+@media(max-width:640px){nav{display:none}form{grid-template-columns:1fr}}
+.contact{display:flex;gap:12px;flex-wrap:wrap}
+.contact a{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 22px;text-decoration:none;font-weight:700;direction:ltr}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+dialog{border:0;border-radius:14px;padding:0;width:min(400px,92vw);background:var(--surface);color:var(--ink)}
+dialog::backdrop{background:rgba(20,8,26,.6)}
+.dlg{padding:24px;display:grid;gap:12px}
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line)}
+.tabs button{flex:1;background:none;border:0;border-bottom:3px solid transparent;padding:8px;font:700 14px Tajawal,sans-serif;color:var(--muted);cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--accent);border-color:var(--accent)}
+.msg{min-height:22px;font-size:14px;color:var(--accent)}
+.link{background:none;border:0;color:var(--accent);cursor:pointer;font:inherit;text-decoration:underline;padding:0;justify-self:start}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top">بيوتي سنتر الحمد</a>
+<nav><a href="#services">الخدمات</a><a href="#branches">الفروع</a><a href="#book">احجزي موعدك</a><a href="#contact">اتصلي بنا</a></nav>
+<button class="btn" id="accBtn" type="button">تسجيل الدخول</button>
+</div></header>
+
+<div class="hero" id="top"><div class="wrap">
+<h1>جمالك يبدأ من عندنا</h1>
+<p>عناية بالشعر والبشرة والجسم، وتجهيزات كاملة للعروس، في أربعة فروع.</p>
+<div class="row"><a class="btn" href="#book">احجزي موعدك</a><a class="btn alt" href="#services">شوفي خدماتنا</a></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2>خدماتنا</h2><p class="sub">كل ما تحتاجينه في مكان واحد.</p>
+<div class="services">
+<div class="svc"><h3>التريتمنت (فرد الشعر)</h3><p>فرد وتنعيم للشعر بخامات مختارة.</p></div>
+<div class="svc"><h3>الترميم</h3><p>علاج الشعر التالف واستعادة حيويته.</p></div>
+<div class="svc"><h3>الصبغات</h3><p>ألوان متنوعة بتنفيذ احترافي.</p></div>
+<div class="svc"><h3>الحمام المغربي والتكبيس</h3><p>تنظيف عميق وانتعاش للبشرة.</p></div>
+<div class="svc"><h3>الجاكوزي وماسكات الجسم</h3><p>ماسكات متعددة للجسم مع جلسة جاكوزي.</p></div>
+<div class="svc"><h3>الأيشز (الرموش)</h3><p>تركيب رموش بنظرة طبيعية.</p></div>
+<div class="svc"><h3>السويت</h3><p>إزالة الشعر بطريقة لطيفة.</p></div>
+<div class="svc"><h3>تجهيزات العرائس</h3><p>باقات كاملة ليوم زفافك.</p></div>
+</div></div></section>
+
+<section id="branches" class="book"><div class="wrap">
+<h2>فروعنا</h2><p class="sub">اختاري الأقرب إليك.</p>
+<div class="branches">
+<div class="br"><h3>مدينة نصر</h3><p>فرع مدينة نصر</p></div>
+<div class="br"><h3>المهندسين</h3><p>فرع المهندسين</p></div>
+<div class="br"><h3>الهرم</h3><p>فرع الهرم</p></div>
+<div class="br"><h3>الهضبة</h3><p>فرع الهضبة</p></div>
+</div></div></section>
+
+<section id="book"><div class="wrap">
+<h2>احجزي موعدك</h2><p class="sub">املئي البيانات وسيصلنا طلبك على واتساب لتأكيد الموعد.</p>
+<form id="bookForm">
+<label>الاسم<input name="n" required autocomplete="name"></label>
+<label>رقم الموبايل<input name="p" type="tel" required inputmode="tel" autocomplete="tel"></label>
+<label>الفرع<select name="b" required><option value="">اختاري الفرع</option><option>مدينة نصر</option><option>المهندسين</option><option>الهرم</option><option>الهضبة</option></select></label>
+<label>الخدمة<select name="s" required><option value="">اختاري الخدمة</option><option>التريتمنت (فرد الشعر)</option><option>الترميم</option><option>الصبغات</option><option>الحمام المغربي والتكبيس</option><option>الجاكوزي وماسكات الجسم</option><option>الأيشز (الرموش)</option><option>السويت</option><option>تجهيزات العرائس</option></select></label>
+<label>التاريخ<input name="d" type="date" required></label>
+<label>الوقت<input name="t" type="time" required></label>
+<div class="full"><button class="btn" type="submit">إرسال الحجز عبر واتساب</button></div>
+</form></div></section>
+
+<section id="contact" class="book"><div class="wrap">
+<h2>اتصلي بنا</h2><p class="sub">اتصال أو واتساب على الرقمين:</p>
+<div class="contact">
+<a href="tel:01148913153">01148913153</a>
+<a href="tel:01114889374">01114889374</a>
+<a href="https://wa.me/201148913153">واتساب</a>
+</div></div></section>
+
+<footer>© بيوتي سنتر الحمد</footer>
+
+<dialog id="dlg"><div class="dlg">
+<div class="tabs" role="tablist">
+<button type="button" role="tab" data-t="login" aria-selected="true">دخول</button>
+<button type="button" role="tab" data-t="signup" aria-selected="false">حساب جديد</button>
+<button type="button" role="tab" data-t="reset" aria-selected="false">نسيت كلمة المرور</button>
+</div>
+<form id="af" style="display:grid;grid-template-columns:1fr;gap:12px">
+<label>اسم المستخدم<input name="u" required autocomplete="username"></label>
+<label id="phL" hidden>رقم الموبايل<input name="ph" type="tel" inputmode="tel"></label>
+<label id="pwL">كلمة المرور<input name="pw" type="password" autocomplete="current-password"></label>
+<label id="np" hidden>كلمة مرور جديدة<input name="np" type="password" autocomplete="new-password"></label>
+<div class="msg" id="msg" role="status"></div>
+<button class="btn" type="submit" id="go">دخول</button>
+</form>
+<button class="link" type="button" id="close">إغلاق</button>
+</div></dialog>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)};
+var WA='201148913153';
+var mem={users:{},cur:null};
+function ld(){try{var v=localStorage.getItem('alhamd_users');if(v)mem.users=JSON.parse(v)||{};mem.cur=localStorage.getItem('alhamd_cur')}catch(e){}}
+function sv(){try{localStorage.setItem('alhamd_users',JSON.stringify(mem.users));if(mem.cur)localStorage.setItem('alhamd_cur',mem.cur);else localStorage.removeItem('alhamd_cur')}catch(e){}}
+ld();
+var tab='login',dlg=$('#dlg'),btn=$('#accBtn');
+function ui(){btn.textContent=mem.cur?('أهلاً '+mem.cur+' (خروج)'):'تسجيل الدخول'}
+ui();
+btn.onclick=function(){if(mem.cur){mem.cur=null;sv();ui();return}setTab('login');$('#msg').textContent='';dlg.showModal()};
+$('#close').onclick=function(){dlg.close()};
+function setTab(t){tab=t;
+document.querySelectorAll('.tabs button').forEach(function(b){b.setAttribute('aria-selected',b.dataset.t===t)});
+$('#phL').hidden=t!=='signup'&&t!=='reset';
+$('#pwL').hidden=t==='reset';
+$('#np').hidden=t!=='reset';
+$('#pwL input').required=t!=='reset';
+$('#np input').required=t==='reset';
+$('#go').textContent={login:'دخول',signup:'إنشاء الحساب',reset:'تغيير كلمة المرور'}[t];
+$('#phL input').required=t==='signup'||t==='reset'}
+document.querySelectorAll('.tabs button').forEach(function(b){b.onclick=function(){setTab(b.dataset.t);$('#msg').textContent=''}});
+$('#af').onsubmit=function(e){e.preventDefault();
+var f=e.target,u=f.u.value.trim(),m=$('#msg'),x=mem.users[u];
+if(tab==='signup'){
+if(x){m.textContent='اسم المستخدم مستخدم بالفعل، جرّبي اسماً آخر.';return}
+if(f.pw.value.length<4){m.textContent='كلمة المرور لازم تكون 4 أحرف على الأقل.';return}
+mem.users[u]={pw:f.pw.value,ph:f.ph.value.trim()};mem.cur=u;sv();ui();dlg.close()}
+else if(tab==='login'){
+if(!x||x.pw!==f.pw.value){m.textContent='اسم المستخدم أو كلمة المرور غير صحيحة.';return}
+mem.cur=u;sv();ui();dlg.close()}
+else{
+if(!x||x.ph!==f.ph.value.trim()){m.textContent='البيانات غير مطابقة. تأكدي من اسم المستخدم ورقم الموبايل.';return}
+if(f.np.value.length<4){m.textContent='كلمة المرور الجديدة لازم تكون 4 أحرف على الأقل.';return}
+x.pw=f.np.value;sv();m.textContent='تم تغيير كلمة المرور. سجّلي الدخول الآن.';setTab('login')}
+};
+$('#bookForm').onsubmit=function(e){e.preventDefault();var f=e.target;
+var t='حجز جديد - بيوتي سنتر الحمد\nالاسم: '+f.n.value+'\nالموبايل: '+f.p.value+'\nالفرع: '+f.b.value+'\nالخدمة: '+f.s.value+'\nالتاريخ: '+f.d.value+'\nالوقت: '+f.t.value;
+window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(t),'_blank')};
+if(mem.cur&&mem.users[mem.cur]){var p=mem.users[mem.cur].ph;if(p)$('#bookForm').p.value=p;$('#bookForm').n.value=mem.cur}
+})();
+</script>
+</body>
+</html>
